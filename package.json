@@ -1,27 +1,30 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "main": "./lib/index.js",
-  "scripts": {
-    "test": "tsc && node lib/index.js",
-    "build": "tsc",
-    "lint": "tslint -c tslint.json src/**/*.ts",
-    "prepublish": "npm run build"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "@types/ws": "^7.4.5",
-    "ngrok": "^4.0.1",
-    "tslint": "^6.1.3",
-    "typescript": "^4.3.4",
-    "ws": "^7.5.0"
-  },
-  "files": [
-    "./bin/*",
-    "./lib/*"
-  ],
-  "typings": "./lib/index.d.ts"
+    "name": "Websocket-server",
+    "version": "1.0.0",
+    "main": "./lib/index.js",
+    "scripts": {
+        "hot reload": "nodemon",
+        "test": "tsc && node lib/index.js",
+        "build": "tsc",
+        "lint": "tslint -c tslint.json src/**/*.ts",
+        "prepublish": "npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "@types/prompt-sync": "^4.1.0",
+        "@types/ws": "^7.4.5",
+        "ngrok": "^4.0.1",
+        "prompt-sync": "^4.2.0",
+        "tslint": "^6.1.3",
+        "typescript": "^4.3.4",
+        "ws": "^7.5.0"
+    },
+    "files": [
+        "./bin/*",
+        "./lib/*"
+    ],
+    "typings": "./lib/index.d.ts"
 }
